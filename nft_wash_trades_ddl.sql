@@ -1,0 +1,21 @@
+CREATE TABLE IF NOT EXISTS ethereum.nfts.nft_wash_trades (
+  token_address VARCHAR(42),
+  token_id VARCHAR,
+  token_name VARCHAR,
+  token_symbol VARCHAR,
+  block_timestamp TIMESTAMP_NTZ(9),
+  transaction_hash VARCHAR,
+  unique_id VARCHAR,
+  marketplace VARCHAR,
+  buyer_address VARCHAR(42),
+  seller_address VARCHAR(42),
+  price FLOAT,
+  usd_price FLOAT,
+  currency_address VARCHAR(42),
+  buyer_is_seller BOOLEAN,
+  baf_token_24h BOOLEAN,
+  baf_collection_24h BOOLEAN,
+  same_nft_traded_7d BOOLEAN,
+  wash_trading_score INTEGER,
+  is_wash_trading BOOLEAN
+)

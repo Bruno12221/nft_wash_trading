@@ -1,0 +1,11 @@
+name: nft_wash_trading
+version: 1.0.0
+config-version: 2
+
+profile: nft_wash_trading
+
+model-paths: ["models"]
+
+models:
+  nft_wash_trading:
+    +materialized: table

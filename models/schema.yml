@@ -1,0 +1,86 @@
+version: 2
+
+models:
+  - name: nft_trades
+    columns:
+      - name: UNIQUE_ID
+        tests:
+          - not_null
+          - unique
+      - name: TOKEN_ADDRESS
+        tests:
+          - not_null
+      - name: TOKEN_ID
+        tests:
+          - not_null
+      - name: BLOCK_TIMESTAMP
+        tests:
+          - not_null
+      - name: TRANSACTION_HASH
+        tests:
+          - not_null
+
+  - name: buyer_is_seller
+    columns:
+      - name: UNIQUE_ID
+        tests:
+          - not_null
+          - unique
+      - name: buyer_is_seller
+        tests:
+          - not_null
+
+  - name: baf_token_24h
+    columns:
+      - name: UNIQUE_ID
+        tests:
+          - not_null
+          - unique
+      - name: baf_token_24h
+        tests:
+          - not_null
+
+  - name: baf_collection_24h
+    columns:
+      - name: UNIQUE_ID
+        tests:
+          - not_null
+          - unique
+      - name: baf_collection_24h
+        tests:
+          - not_null
+
+  - name: same_nft_traded_7d
+    columns:
+      - name: UNIQUE_ID
+        tests:
+          - not_null
+          - unique
+      - name: same_nft_traded_7d
+        tests:
+          - not_null
+
+  - name: nft_wash_trades
+    columns:
+      - name: UNIQUE_ID
+        tests:
+          - not_null
+          - unique
+      - name: TOKEN_ADDRESS
+        tests:
+          - not_null
+      - name: TOKEN_ID
+        tests:
+          - not_null
+      - name: BLOCK_TIMESTAMP
+        tests:
+          - not_null
+      - name: TRANSACTION_HASH
+        tests:
+          - not_null
+      - name: wash_trading_score
+        tests:
+          - not_null
+      - name: is_wash_trading
+        tests:
+          - not_null
